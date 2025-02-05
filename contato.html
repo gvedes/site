@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contato.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <a class="nav" href="./index.html">Home</a>
+            <a class="nav" href="./about.html">Sobre Mim</a>
+            <a class="nav" href="./contato.html">Contato</a>
+            <div class="animation start-blog"></div>
+        </nav>
+    </header>
+
+    <main class="formulario">
+        <h1 class="formulario__titulo">Entre em contato!</h1>
+
+        <form class="dados__formulario" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="232e595a-1f3e-4fed-9766-c9158ffeb14c">
+        
+            <label for="name">Qual o seu nome?</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Escreva sua mensagem:</label>
+            <textarea name="message" id="message" required></textarea>
+        
+            <!-- Adicionando o redirecionamento para a página de agradecimento -->
+            <input type="hidden" name="redirect" value="https://seu-dominio.com/obrigado.html">
+        
+            <button class="botao__envio" type="submit">Clique para enviar!</button>        
+        </form>
+
+    </main>
+
+
+    <footer class="rodape">
+        <p>Desenvolvido por Lucas Guedes.</p>
+    </footer>
+
+</body>
+</html>
